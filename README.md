@@ -1,25 +1,66 @@
 # Sistema de Votación Online
 
-## Introducción
-El presente proyecto tiene como objetivo crear un sistema de votación online seguro, confiable y fácil de usar, que permita a los usuarios participar en elecciones y encuestas de manera remota.
 
-## Funcionalidades
-* Autenticación y autorización: el sistema permitirá a los usuarios registrarse y autenticarse de manera segura.
-* Creación y gestión de elecciones: el sistema permitirá crear, editar y eliminar elecciones, así como gestionar las opciones de votación.
-* Votación: los usuarios podrán votar por las opciones disponibles en cada elección del proceso.
-* Resultados: el sistema mostrará los resultados en tiempo real, con estadísticas y gráficos para facilitar la comprensión.
+## Tabla de contenido
+  - [Proposito del Proyecto](#Proposito).
+  - [Tecnolofías utilizadas](#Tecnologías).
+  - [Funcionalidades: Diagrama de Casos de Uso y Prototipo](#Funcionalidades).
+  - [Modelo de Dominio: Diagrama de Clases y Módulos](#Modelo-de-Dominio).
+  - [Arquitectura y Patrones: Diagra de Componentes o Paquetes](#Arquitectura-y-Patrones).
 
-## Tecnologías utilizadas
+
+## Tecnologías 
 * Lenguaje de programación: Python
 * Frameworks y bibliotecas: Flask, SQLAlchemy
 * Base de datos: SQLite
 
-## Características clave
-* Seguridad: el sistema utiliza criptografía avanzada y técnicas de autenticación para proteger la integridad del proceso de votación.
-* Escalabilidad: el sistema está diseñado para ser escalable y adaptable a diferentes contextos y números de usuarios.
-* Intuitivo: el sistema tiene una interfaz intuitiva y fácil de usar, para facilitar la experiencia del usuario.
+## Proposito: 
+La presente propuesta tiene como objetivo el desarrollo de un sistema de votación en línea que permita a los usuarios emitir sus votos de manera segura y eficiente. Este proyecto busca proporcionar una herramienta transparente y confiable para gestionar procesos electorales, garantizando la integridad y privacidad de los votos emitidos.
 
-## Desarrollo
-Este proyecto ha sido desarrollado utilizando Python 3.9, con el framework Flask como backend y SQLAlchemy como ORM. La base de datos es SQLite, y se ha utilizado Nginx como servidor web. Se han implementado diferentes mecanismos para garantizar la integridad del proceso de votación, incluyendo autenticación y autorización robustas.
+## Funcionalidades
+Desde la perspectiva del proyecto, se presenta un sistema de votación en línea específicamente diseñado para servir los intereses de cualquier organización que requiera un proceso electoral. A través de sus características y funcionalidades, se busca proporcionar una experiencia segura y eficiente para sus usuarios.
+
+![caso_de_uso](https://github.com/ANTHONYCCOLQUE/-I.SoftwareFinalProject-VotacionOnline/assets/104391632/a143d6b4-2890-43a5-9ce5-bd95b9a3b7e4)
+                                                                                    
+                                        Figura 1. Diagrama de Casos de Uso
+
+
+| Tipo de Usuario   | Administrador                          | 
+|-------------------|------------------------------------|
+| Formacion     | Desarrollador de Software y Experto en Informatica |
+| Actividades     | Control y manejo del sistema en general |
+
+            Tabla 1 :Perfil de Administrador
+
+
+
+
+| Tipo de Usuario   | Usuario                          | 
+|-------------------|------------------------------------|
+| Formacion     | Usuario Registrado |
+| Actividades     | Emitir voto, ver resultados, actualizar perfil, etc.|
+
+            Tabla 2 :Perfil de Usuario
+
+| Requisitos_Funcionales | Requisitos_Funcionales |
+|------------------------|------------------------|
+|  Logearse              |	Rendimiento       |
+|  Registrar             |	Seguridad         |
+|  Emitir votos          |	Usabilidad        |
+|  Ver resutlados        |	                  |
+|  Actualizar Perfil     |	                  |
+|  Cerrar sesion         |	                  |
+
+
+
+## Modelo de Dominio
+
+
+![Modelo-Dominio](https://github.com/ANTHONYCCOLQUE/-I.SoftwareFinalProject-VotacionOnline/assets/104391632/0bd10eb7-6c61-4ae8-8369-bf86e8ffe4c2)
+
+
+
+
+                          Figura 2. Modelo de Dominio
 
 ## Proceso futuro
