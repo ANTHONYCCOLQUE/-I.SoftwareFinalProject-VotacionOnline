@@ -1,0 +1,27 @@
+<!-- app/templates/add_candidate.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Candidate</title>
+</head>
+<body>
+    <h1>Add New Candidate</h1>
+    <form method="POST" action="{{ url_for('main.add_candidate') }}">
+        <p>
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" id="name" required><br>
+        </p>
+        <p>
+            <label for="position_id">Position:</label><br>
+            <select name="position_id" id="position_id">
+                {% for position in positions %}
+                    <option value="{{ position.id }}">{{ position.title }}</option>
+                {% endfor %}
+            </select>
+        </p>
+        <p><input type="submit" value="Add Candidate"></p>
+    </form>
+</body>
+</html>

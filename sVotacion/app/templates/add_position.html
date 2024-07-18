@@ -1,0 +1,19 @@
+<!-- app/templates/add_position.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Position</title>
+</head>
+<body>
+    <h1>Add New Position</h1>
+    <form method="POST" action="{{ url_for('main.add_position') }}">
+        <p>
+            <label for="title">Title:</label><br>
+            <input type="text" name="title" id="title" required><br>
+        </p>
+        <p><input type="submit" value="Add Position"></p>
+    </form>
+</body>
+</html>

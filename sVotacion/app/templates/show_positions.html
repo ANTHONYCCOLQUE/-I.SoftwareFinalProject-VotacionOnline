@@ -1,0 +1,16 @@
+<!-- app/templates/show_positions.html -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Positions</title>
+</head>
+<body>
+    <h1>Positions</h1>
+    <ul>
+    {% for position in positions %}
+        <li>{{ position.title }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!-- app/templates/vote.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote</title>
+</head>
+<body>
+    <h1>Vote</h1>
+    <form method="POST" action="{{ url_for('main.vote') }}">
+        {% for position in positions %}
+            <h2>{{ position.title }}</h2>
+            {% for candidate in position.candidates %}
+                <p>
+                    <input type="radio" name="position_{{ position.id }}" value="{{ candidate.id }}">
+                    {{ candidate.name }}
+                </p>
+            {% endfor %}
+        {% endfor %}
+        <p><input type="submit" value="Submit Vote"></p>
+    </form>
+</body>
+</html>

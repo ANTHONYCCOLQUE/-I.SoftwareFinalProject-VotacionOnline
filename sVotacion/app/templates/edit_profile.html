@@ -1,0 +1,25 @@
+<!-- app/templates/edit_profile.html -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Profile</title>
+</head>
+<body>
+    <h1>Edit Profile</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.username.label }}<br>
+            {{ form.username(size=32) }}<br>
+            {{ form.first_name.label }}<br>
+            {{ form.first_name(size=32) }}<br>
+            {{ form.last_name.label }}<br>
+            {{ form.last_name(size=32) }}<br>
+            {{ form.email.label }}<br>
+            {{ form.email(size=32) }}<br>
+            {{ form.submit() }}
+        </p>
+    </form>
+</body>
+</html>

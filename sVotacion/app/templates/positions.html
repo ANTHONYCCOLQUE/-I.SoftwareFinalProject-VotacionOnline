@@ -1,0 +1,18 @@
+<!-- app/templates/positions.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+</head>
+<body>
+    <h1>Positions</h1>
+    <a href="{{ url_for('main.add_position') }}">Add New Position</a>
+    <ul>
+        {% for position in positions %}
+            <li>{{ position.title }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

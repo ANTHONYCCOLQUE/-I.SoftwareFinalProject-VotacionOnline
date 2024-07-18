@@ -1,0 +1,25 @@
+<!-- app/templates/profile.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+</head>
+<body>
+    <h1>Profile</h1>
+    <form method="POST" action="{{ url_for('main.profile') }}">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.username.label }}<br>
+            {{ form.username(size=32) }}<br>
+            {{ form.username.errors }}
+        </p>
+        <p>
+            {{ form.email.label }}<br>
+            {{ form.email(size=32) }}<br>
+            {{ form.email.errors }}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+</body>
+</html>
