@@ -63,7 +63,10 @@ Desde la perspectiva del proyecto, se presenta un sistema de votación en línea
 ## Prácticas de Codificación Limpia
 ### Comentarios(comments)
 Esta practica se refiere a la práctica de agregar comentarios y documentación al código para explicar su funcionamiento, propósito y cualquier detalle relevante. Esta práctica es esencial para mejorar la legibilidad y mantenibilidad del código, así como para facilitar la colaboración en equipos de desarrollo.
-
+Comentarios (Comments):
+- Los comentarios son fragmentos de texto que se insertan en el código fuente para explicar el propósito de un bloque de código, una función o una línea de código.
+- Los comentarios ayudan a los desarrolladores a comprender rápidamente qué hace una porción de código, especialmente cuando la lógica es compleja o poco intuitiva.
+- Los comentarios también pueden proporcionar información sobre el razonamiento detrás de ciertas decisiones de diseño o implementación.
 
 ### Nombres significativos
 Esta práctica se refiere a la elección de nombres claros y descriptivos para variables, funciones, clases y otros elementos del código. El uso de nombres significativos mejora la comprensión y la mantenibilidad del código.
