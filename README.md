@@ -83,4 +83,9 @@ Formato y estilo (Formatting and Style):
 - Sigue las convenciones de estilo y formato establecidas para el lenguaje de programación que estás utilizando.
 - Utiliza sangrías, espacios y saltos de línea de manera consistente para mejorar la legibilidad del código.
 - Adopta un estilo de codificación uniforme en todo el proyecto para que sea más fácil de entender y mantener.
+
+### Parte Implementada en el proyecto 
+
+
+
 ## Proceso futuro
